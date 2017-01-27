@@ -8,19 +8,33 @@
 
 import Cocoa
 
+
+let ADB_PATH = "~/Library/Android/sdk/platform-tools/adb"
+
+
 class ViewController: NSViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    @IBOutlet var devMenuButton:NSButton!
+    @IBOutlet var reloadButton:NSButton!
+    @IBOutlet weak var alwaysOnTopToggleButton: NSButton!
+
+
+    @IBAction func onShowDevMenu(_ btn:NSButton){
+        callABD(args: ["shell","input","keyevent","KEYCODE_MENU"])
     }
 
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
+
+    @IBAction func onReload(_ btn:NSButton){
+        callABD(args: ["shell","input","text","RR"])
+
     }
 
+    func callABD(args:[String]) {
+        let task = Process()
+        task.launchPath = ADB_PATH;
+        task.arguments = args
+        task.launch()
+    }
 
 }

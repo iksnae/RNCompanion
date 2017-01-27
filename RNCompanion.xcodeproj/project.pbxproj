@@ -11,6 +11,7 @@
 		8F83F4E31E3A5CC90033AB17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F83F4E21E3A5CC90033AB17 /* ViewController.swift */; };
 		8F83F4E51E3A5CC90033AB17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F83F4E41E3A5CC90033AB17 /* Assets.xcassets */; };
 		8F83F4E81E3A5CC90033AB17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F83F4E61E3A5CC90033AB17 /* Main.storyboard */; };
+		8FEFF27F1E3A8C6700C68817 /* Win.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEFF27E1E3A8C6700C68817 /* Win.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		8F83F4E41E3A5CC90033AB17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F83F4E71E3A5CC90033AB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F83F4E91E3A5CC90033AB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FEFF27E1E3A8C6700C68817 /* Win.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Win.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				8F83F4E01E3A5CC90033AB17 /* AppDelegate.swift */,
 				8F83F4E21E3A5CC90033AB17 /* ViewController.swift */,
+				8FEFF27E1E3A8C6700C68817 /* Win.swift */,
 				8F83F4E41E3A5CC90033AB17 /* Assets.xcassets */,
 				8F83F4E61E3A5CC90033AB17 /* Main.storyboard */,
 				8F83F4E91E3A5CC90033AB17 /* Info.plist */,
@@ -133,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FEFF27F1E3A8C6700C68817 /* Win.swift in Sources */,
 				8F83F4E31E3A5CC90033AB17 /* ViewController.swift in Sources */,
 				8F83F4E11E3A5CC90033AB17 /* AppDelegate.swift in Sources */,
 			);
@@ -289,6 +293,7 @@
 				8F83F4EE1E3A5CC90033AB17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
