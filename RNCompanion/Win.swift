@@ -15,6 +15,7 @@ class Win: NSWindowController {
         window?.level = Int(CGWindowLevelForKey(.floatingWindow))
         if let window = window {
             let screenRect = (NSScreen.main()?.visibleFrame)!
+            window.title = "RN Companion"
             window.level = Int(CGWindowLevelForKey(.floatingWindow))
             window.setFrame(CGRect(x: screenRect.width-100, y: screenRect.height-20, width: 200, height: 120), display: true)
             
